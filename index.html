@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Jost:ital,wght@0,100;0,200;1,100&family=Metrophobic&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/44f557ccce.js"></script>
+    <title>Mi Página</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <img src="Imagenes/logo.png" alt="Logo"> 
+        <div>
+            <a href="#hogar">Hogar</a>
+            <a href="#features">Features</a>
+            <a href="#screenshots">Screenshots</a>
+            <a href="#Reviews">Reviews</a>
+            <a href="#LatestNews">Latest News</a>
+            <a href="#ContactUs">Contactanos</a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="dropdown-menu">
+            <a href="#hogar"onclick="toggleMenu()">Hogar</a>
+            <a href="#features" onclick="toggleMenu()">Features</a>
+            <a href="#screenshots" onclick="toggleMenu()">Screenshots</a>
+            <a href="#Reviews" onclick="toggleMenu()">Reviews</a>
+            <a href="#LatestNews" onclick="toggleMenu()">Latest News</a>
+            <a href="#ContactUs"onclick="toggleMenu()">Contactanos</a>
+
+        </div>
+    </nav>
+    <header id="hogar">
+        <div>
+            <h1>Appestia</h1>
+            <p>Explora el mundo de las aplicaciones innovadoras <br> para mejorar tu experiencia digital.</p>
+        </div>
+
+<div class="download-buttons">
+
+    <a href="#" class="download-button" onclick="return false;">
+        <img src="Imagenes/appStore.png" alt="App Store" onclick="return false;">
+    </a>
+    <a href="#" class="download-button" onclick="return false;">
+        <img src="Imagenes/googlePlay.png" alt="Google Play" onclick="return false;">
+    </a>
+</div>
+<div class="header-image">
+    <img src="Imagenes/imagenDerecha.png" alt="Imagen Derecha">
+</div>
+    </header>
+
+    <section id="features">
+        <h2>Appestia features</h2>
+        <p>Las características únicas con las que cuenta nuestra aplicación</p>
+        <div class="section-image">
+            <div class="left-column">
+                <div class="box">
+                    <h3>Registro</h3>
+                    <p>Registro sencillo mediante correo electrónico o número telefónico</p>
+                </div>
+                <div class="box">
+                    <h3>Acceso (Sign in)</h3>
+                    <p>Acceso a la aplicación mediante cuenta de Facebook, Google, AppleID o correo electrónico</p>
+                </div>
+                <div class="box">
+                    <h3>Gestión del perfil</h3>
+                    <p>Gestión del perfil del usuario registrado</p>
+                </div>
+            </div>
+            <img src="Imagenes/imagenDerecha.png" alt="Descripción de la imagen">
+            <div class="right-column">
+                <div class="box">
+                    <h3>Navegación</h3>
+                    <p>Navegación sencilla e intuitiva, todo a tu alcance</p>
+                </div>
+                <div class="box">
+                    <h3>Búsqueda de Hoteles</h3>
+                    <p>Búsqueda de hoteles mediante texto de búsqueda</p>
+                </div>
+                <div class="box">
+                    <h3>Detalle de Hotel</h3>
+                    <p>Visualización del detalle, descripción,instalaciones y localización de un hotel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="screenshots">
+        <h2>Screenshots</h2>
+        <p>Capturas de pantalla de nuestro producto</p>
+        <div class="screenshot-carousel">
+            <div id="nav-buttons-container">
+            <button class="prev" onclick="changeSlide(-1, 'left')">&#10094;</button>
+        </div>
+        <div class="screenshot-container" onmouseenter="showOverlay(this)" onmouseleave="hideOverlay(this)">
+            <img src="Imagenes/imagenTest.png" alt="Screenshot 1">
+            <div class="image-overlay">
+                <p class="overlay-text">Ejemplo1</p>
+            </div>
+        </div>
+        
+        <div class="screenshot-container" onmouseenter="showOverlay(this)" onmouseleave="hideOverlay(this)">
+            <img src="Imagenes/imagenMedio.png" alt="Screenshot 2">
+            <div class="image-overlay">
+                <p class="overlay-text">Ejemplo2</p>
+            </div>
+        </div>
+        
+        <div class="screenshot-container" onmouseenter="showOverlay(this)" onmouseleave="hideOverlay(this)">
+            <img src="Imagenes/imagenDerecha.png" alt="Screenshot 3">
+            <div class="image-overlay">
+                <p class="overlay-text">Ejemplo3</p>
+            </div>
+        </div>
+            <div id="nav-buttons-container">
+                <button class="next" onclick="changeSlide(1, 'right')">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="Reviews">
+        <div class="rev-section">
+
+            <h2 >What they say about us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laboriosam possimus perferendis non error neque.</p>
+            
+            <div class="reviews">
+            
+            <div class="review">
+               <div class="head-review">
+                  <img src="Imagenes/aaaa.jpg" width="250px">
+               </div>
+               <div class="body-review">
+                  <div class="name-review">Nathan D.</div>
+                  <div class="place-review">Germany</div>
+                  <div class="rating">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half"></i>
+                  </div>
+                  <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+               </div>
+            </div>
+            <div class="review">
+               <div class="head-review">
+                  <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" width="250px">
+               </div>
+               <div class="body-review">
+                  <div class="name-review">Mary Will</div>
+                  <div class="place-review">Paris</div>
+                  <div class="rating">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                  </div>
+                  <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+               </div>
+            </div>
+            <div class="review">
+               <div class="head-review">
+                  <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" width="250px">
+               </div>
+               <div class="body-review">
+                  <div class="name-review">Kevin Tuck</div>
+                  <div class="place-review">New York</div>
+                  <div class="rating">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half"></i>
+                  </div>
+                  <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+               </div>
+            </div>
+            
+            </div>
+            <button id="changeReviewBtn" onclick="changeReview()">Siguiente Reseña</button>
+            </div>
+    </section>
+
+    <section id="LatestNews">
+        <h2>Latest News</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laboriosam possimus perferendis non error neque.</p>
+        <div id="NewsRectangle">
+            <div id="NewsContent">
+                <h3>Noticia Destacada</h3>
+                <p>Contenido de la noticia destacada. Puedes agregar más detalles aquí.</p>
+                <a id="ReadMoreButton" href="https://www.elcomercio.pe">Leer más</a>
+            </div>
+        </div>
+        <div id="NewsRectangle">
+            <div id="NewsContent">          
+                <h3>Noticia Destacada</h3>
+                <p>Contenido de la noticia destacada. Puedes agregar más detalles aquí.</p>
+                <a id="ReadMoreButton" href="https://www.elcomercio.pe">Leer más</a>
+            </div>
+        </div>
+        <div id="NewsRectangle">
+            <div id="NewsContent">
+                <h3>Noticia Destacada</h3>
+                <p>Contenido de la noticia destacada. Puedes agregar más detalles aquí.</p>
+                <a id="ReadMoreButton" href="https://www.elcomercio.pe">Leer más</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="ContactUs">
+        <h2>Contactanos</h2>
+        <p>Dejanos tu información de contacto y te enviaremos un correo lo más pronto posible</p>
+        <div class="section-image-container">
+        </div>
+        <div class="form-container">
+            <form id="contactForm">
+                <div>
+                    <label for="firstName">Nombre:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+            
+                <div>
+                    <label for="lastName">Apellidos:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            
+                <div>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+                <div class="checkbox-container">
+                    <input type="checkbox" id="termsCheckbox" required>
+                    <label for="termsCheckbox">Acepto los términos y condiciones</label>
+                </div>
+                <button type="submit" id="submitButton" disabled>Enviar</button>
+            </form>
+        </div>
+        <div><img src="Imagenes/imagenDerecha.png" alt ="XD"> </div>
+    </section>
+    <script>
+        const form = document.getElementById('contactForm');
+        const submitButton = document.getElementById('submitButton');
+        const termsCheckbox = document.getElementById('termsCheckbox');
+    
+        form.addEventListener('input', () => {
+            submitButton.disabled = !form.checkValidity() || !termsCheckbox.checked;
+        });
+    </script>
+
+
+
+    <footer style="background-color: #072a16; color: #fff; text-align: center; padding: 20px;">
+        <p>@ 2023 Appestia, Inc. Todos los derechos reservados</p>
+        <div>
+            <a href="https://www.facebook.com" target="_blank" style="color: #fff; text-decoration: none; margin: 0 10px;">
+                <img src="Imagenes/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank" style="color: #fff; text-decoration: none; margin: 0 10px;">
+                <img src="Imagenes/twitter-icon.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" style="color: #fff; text-decoration: none; margin: 0 10px;">
+                <img src="Imagenes/instagram-icon.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
